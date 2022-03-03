@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-register Validation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main class="form-signin content login">
+      <h1 class="h3">Login</h1>
+
+      <form action="/new_url" method="POST">
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control emailInput"
+            id="floatingInput"
+            placeholder="name@example.com"
+            required
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control passwordInput"
+            id="floatingPassword"
+            placeholder="Password"
+            required
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <!-- <div class="checkbox mb-3">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              name="remember_me"
+              id="rememberMeSwitch"
+            />
+            <label class="form-check-label" for="rememberMeSwitch">
+              Remember me</label
+            >
+          </div>
+        </div> -->
+        <p class="registerError my-3 text-danger"></p>
+        <button class="btn_Login w-100 btn btn-lg" type="submit">
+          Sign in
+        </button>
+        
+        <p class="text-white my-4">
+          Don’t have an account?<a href="register.html" class="text-white"></a>
+            Sign Up</a
+          >
+        </p>
+      </form>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

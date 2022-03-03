@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-register Validation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main class="form-signin content register">
+      <h1 class="h3">Register</h1>
+
+      <form action="/new_url" method="POST">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control nameInput"
+            id="floatingInput"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="floatingInput">User Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control emailInput"
+            id="floatingInput"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control passwordInput"
+            id="floatingPassword"
+            placeholder="Enter your Password"
+            required
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <p class="registerError my-3 text-danger"></p>
+        <button class="btn_register w-100 btn btn-lg" type="submit">
+          Sign up
+        </button>
+        <p>You have an account?<a href="index.html">Sign In</a></p>
+      </form>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
